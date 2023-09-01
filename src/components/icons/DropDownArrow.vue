@@ -1,0 +1,30 @@
+<script setup>
+import { computed } from 'vue';
+const props = defineProps({
+  arrowColor: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+});
+
+const arrowColor = computed(() => {
+  return props.arrowColor ? '#585EE3' : '#657178';
+});
+
+</script>
+<template>
+  <svg
+    width="11"
+    height="7"
+    viewBox="0 0 11 7"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      :fill="arrowColor"
+      d="M10.0303 0.96967C10.3232 1.26256 10.3232 1.73744 10.0303 2.03033L6.03033 6.03033C5.73744 6.32322 5.26256 6.32322 4.96967 6.03033L0.96967 2.03033C0.676777 1.73744 0.676777 1.26256 0.96967 0.96967C1.26256 0.676777 1.73744 0.676777 2.03033 0.96967L5.5 4.43934L8.96967 0.96967C9.26256 0.676777 9.73744 0.676777 10.0303 0.96967Z"
+    />
+  </svg>
+</template>

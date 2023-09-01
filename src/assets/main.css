@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: Banner-Caps;
+  src: url("../assets/fonts/BannerCaps.ttf");
+}
+
+body {
+  background-color: #F0F4F5;
+}
